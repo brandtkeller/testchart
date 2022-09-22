@@ -4,6 +4,9 @@
 
 replicaCount: 1
 
+job:
+  enabled: false
+
 image:
   repository: nginx
   pullPolicy: IfNotPresent

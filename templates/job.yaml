@@ -1,3 +1,4 @@
+{{- if .Values.job.enabled }}
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -16,3 +17,4 @@ spec:
         - "sleep"
         - "30"
       restartPolicy: Never
+{{- end }}
